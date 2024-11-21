@@ -1,0 +1,21 @@
+<h1>Summary</h1>
+<p><strong>Age:</strong> <%= @financial_info.age %></p>
+<p><strong>Monthly Salary:</strong> ₹<%= @financial_info.salary %></p>
+<p><strong>Monthly Expenses:</strong> ₹<%= @financial_info.monthly_expenses %></p>
+<p><strong>Savings:</strong> ₹<%= @financial_info.savings %></p>
+<p><strong>Goal:</strong> ₹<%= @financial_info.goal %></p>
+<p><strong>Emergency Fund:</strong> ₹<%= @emergency_fund %></p>
+
+<h2>Stock Recommendations</h2>
+<ul>
+  <% @stocks.each do |stock| %>
+    <li><%= stock['shortName'] %>: ₹<%= stock['regularMarketPrice'] %></li>
+  <% end %>
+</ul>
+
+<h2>Fixed Deposit Options</h2>
+<ul>
+  <% @fds.each do |fd| %>
+    <li><%= fd[:bank] %>: <%= fd[:rate] %> for <%= fd[:tenure] %></li>
+  <% end %>
+</ul>

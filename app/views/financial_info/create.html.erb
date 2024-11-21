@@ -1,0 +1,26 @@
+<%= form_with model: @financial_info, url: financial_info_path, method: :post do |f| %>
+    <div>
+      <%= f.label :age %>
+      <%= f.number_field :age %>
+    </div>
+    <div>
+      <%= f.label :salary %>
+      <%= f.number_field :salary %>
+    </div>
+    <div>
+      <%= f.label :monthly_expenses %>
+      <%= f.number_field :monthly_expenses %>
+    </div>
+    <div>
+      <%= f.label :savings %>
+      <%= f.number_field :savings %>
+    </div>
+    <div>
+      <%= f.label :goal %>
+      <%= f.text_field :goal %>
+    </div>
+    <div>
+      <%= f.submit "Submit" %>
+    </div>
+  <% end %>
+  
