@@ -1,24 +1,53 @@
-# README
+# InvestWise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+InvestWise is an intelligent investment optimization platform that helps individuals make informed investment decisions based on their age, financial goals, earnings, and expenditure. The application allows users to specify their financial details and receive personalized investment advice for different sectors.
 
-Things you may want to cover:
+## Features
+- **Personalized Investment Recommendations**: Based on the user's profile, including their goals, earnings, and financial preferences.
+- **Sector-Based Investment Suggestions**: Allows users to invest in various sectors and optimize their investment strategies.
+- **User-Friendly Interface**: Simple, intuitive interface for easy navigation.
+- **Secure and Scalable**: Built with robust technologies for reliability and security.
 
-* Ruby version
+## Technologies Used
+- **Backend**: Java (Spring Boot)
+- **Frontend**: React.js / Vue.js
+- **Machine Learning**: Scala for financial trend prediction and credit risk evaluation.
+- **Database**: MySQL / PostgreSQL
+- **Version Control**: Git & GitHub
 
-* System dependencies
+## Installation
+To set up and run this project locally, follow the steps below:
 
-* Configuration
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/pj290803/InvestWise.git
+2.  Navigate into the project directory:
 
-* Database creation
+bash
+Copy code
+cd InvestWise
 
-* Database initialization
 
-* How to run the test suite
+3.Install the necessary dependencies:
 
-* Services (job queues, cache servers, search engines, etc.)
+bash
+Copy code
+npm install
+# or if using yarn
+yarn install
 
-* Deployment instructions
 
-* ...
+4.Run the application:
+
+bash
+Copy code
+npm start
+# or if using yarn
+yarn start
+
+5.Contributing
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/YourFeature).
+Create a new Pull Request.
